@@ -1,19 +1,20 @@
 /*
-(Find the character of an ASCII code) Write a program that receives an ASCII code
-(an integer between 0 and 127) and displays its character.
+(Find the character of an ASCII code) Write a program that receives a character
+and displays its ASCII code (an integer between 0 and 127). Here is a sample run:
 */
-import java.util.Scanner;
-
-public class Exercise_04_08 {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-
-		// Prompt the user to enter an ASCII code
-		// (an integer between 0 and 127)
-		System.out.print("Enter an ASCII code: ");
-		int i = input.nextInt();
-
-		// Display ASCII code as character
-		System.out.println((char)i);
-	}
+import java.util.*;
+import java.lang.*;
+public class E4_8 {
+    public static void main(String[] args){
+        
+        Scanner input = new Scanner(System.in);
+           
+        System.out.print("Enter a character: ");   
+        String i = input.nextLine();
+        
+        char c = i.charAt(0);
+        
+        System.out.print("The ASCII code for character " + (int)c);
+        
+    }
 }
